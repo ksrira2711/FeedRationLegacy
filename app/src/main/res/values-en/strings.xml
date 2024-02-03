@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FEED_RATION</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="previousReports">View Reports</string>
+    <string name="weight">Enter Weight in KG</string>
+    <string name="milk">Enter Milk Production in litres</string>
+    <string name="fat">Enter Fat Content in %</string>
+    <string name="pregnancy">Enter the Number of months pregnant</string>
+    <string name="pregnancy_count">Enter the Number of months pregnant</string>
+    <string name="animal">Select Animal</string>
+    <string name="lactaion_number">Lactation Number</string>
+    <string name="radio_english">English / ఇంగ్లీష్</string>
+    <string name="radio_telugu">Telugu / తెలుగు</string>
+    <string name="lactation">Enter Lactation number</string>
+
+    <string-array name="animals">
+        <item>Cow</item>
+        <item>Buffalo</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>language/భాష</item>
+        <item>English/ఇంగ్లీష్</item>
+        <item>Telugu/తెలుగు</item>
+    </string-array>
+
+
+    <string-array name="animals1">
+        <item>ఆవు</item>
+        <item>గేదె</item>
+    </string-array>
+    <string-array name="lactation_numbers">
+        <item>Lactation Number</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_results">results</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_feed__composition">Feed_Composition</string>
+    <string name="title_activity_feed_mixture">FeedMixture</string>
+    <string name="title_activity_feed_supplement">FeedSupplement</string>
+    <string name="title_activity_feed__final_results">Feed_Final_results</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="title_activity_instructions1">INSTRUCTIONS1</string>
+    <string name="title_activity_instructions2">INSTRUCTIONS2</string>
+    <string name="title_activity_ration_formulator_activity">Ration_formulator_activity</string>
+    <string name="title_section1">HOME</string>
+    <string name="title_section2">INSTRUCTIONS</string>
+    <string name="title_section3">LANGUAGE</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="Add_feed_name_telugu">కొత్త మేత జోడించు(+)</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+    </array>
+    <string name="title_activity_view_reports">Reports</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_reports">Reports</string>
+
+    <!--For displaying Feed details whenever feed is selected-->
+    <string name="feed_name">Feed Name :</string>
+    <string name="feed_dm">Dry Matter :</string>
+    <string name="feed_cp">CP :</string>
+    <string name="feed_tdn">TDN :</string>
+
+    <!-- Feed Mixture output strings -->
+    <string name="farmerDetails">Farmer Details</string>
+    <string name="farmerName">Farmer Name</string>
+    <string name="farmerAddress">Farmer Address</string>
+    <string name="animalNumber">Number</string>
+    <string name="animalType">Animal Type</string>
+    <string name="milkYield">Milk Yield</string>
+    <string name="fatContent">Fat Content(%)</string>
+    <string name="dateTime">Date - Time</string>
+
+    <string name="feedsHeader">Feeds</string>
+    <string name="requiredHeader">Quantity(kg as such basis)</string>
+
+    <string name="nutrientsHeader">Nutrients</string>
+    <string name="requiredHeaderNutrients">Required(kg)</string>
+    <string name="suppliedHeaderNutrients">Supplied(kg)</string>
+    <string name="dryMatter">Dry Matter</string>
+    <string name="CP">CP</string>
+    <string name="TDN">TDN</string>
+    <string name="CA">Ca(Absorbable)</string>
+    <string name="PH">P(Absorbable)</string>
+
+    <string name="totalCostString">Total Cost of the Ration is Rs. </string>
+    <string name="roughageRatioString">Roughage : Concentrate = </string>
+
+    <string name="cpExcessString">Here, CP is in excess. So Please Reselect Feeds </string>
+    <string name="cpDeficientString">Here, CP is Deficient. So Please Reselect Feeds </string>
+    <string name="tdnExcessString">Here, TDN is in excess. So Please Reselect Feeds </string>
+    <string name="tdnDeficientString">Here, TDN is Deficient. So Please Reselect Feeds </string>
+    <string name="caDeficientString1">Here, Ca is Deficient. So Please add </string>
+    <string name="caDeficientString2">g of Mineral Mixture(Type 1) to the existing feed combination</string>
+    <string name="editFieldsMessage">or Edit feed quantity</string>
+
+    <string name="maxFilterString">Pls Enter value less than </string>
+    <string name="reselectFeedsbutton">RESELECT FEEDS</string>
+    <string name="save">SAVE</string>
+    <string name="reportSuccessString">Report Generated Successfully</string>
+
+</resources>

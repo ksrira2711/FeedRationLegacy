@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ration_formulation.feed_ration_latest.Ration_Formulator">
+    <item android:id="@+id/previousReports" android:title="@string/previousReports"
+        android:orderInCategory="100" app:showAsAction="ifRoom|withText" />
+
+</menu>

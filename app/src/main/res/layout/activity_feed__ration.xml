@@ -1,0 +1,281 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feed_Ration"
+    android:background="#ff131313">
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#ff131313"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Feed_Ration"
+    android:background="#ff131313">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/weight"
+        android:layout_below="@+id/AnimalNumberNull"
+        android:hint="@string/weight"
+        android:background="@android:color/background_light"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_margin="10dp"
+        android:autoText="false"
+        android:paddingLeft="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff131313"
+        android:textColor="#FF5733"
+        android:id="@+id/WeightNull"
+        android:layout_below="@+id/weight"
+        android:layout_margin="2dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:text="* Weight of animal is required"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/milk_content"
+        android:layout_below="@+id/WeightNull"
+        android:hint="@string/milk"
+        android:background="@android:color/background_light"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_margin="10dp"
+        android:autoText="false"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/fat_percent"
+        android:layout_below="@+id/milk_content"
+        android:hint="@string/fat"
+        android:background="@android:color/background_light"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_margin="10dp"
+        android:autoText="false"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/pregnancy"
+        android:layout_below="@+id/fat_percent"
+        android:hint="@string/pregnancy"
+        android:background="@android:color/background_light"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_margin="10dp"
+        android:autoText="false"
+        android:paddingLeft="10dp" />
+
+    <!--<Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/lactation"
+        android:entries="@array/lactation_numbers"
+        android:prompt="@string/lactaion_number"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_margin="10dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentRight="false"
+        android:layout_below="@+id/pregnancy"/>-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number|numberDecimal"
+        android:ems="10"
+        android:id="@+id/lactation"
+        android:layout_below="@+id/pregnancy"
+        android:hint="@string/lactation"
+        android:background="@android:color/background_light"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_margin="10dp"
+        android:autoText="false"
+        android:paddingLeft="10dp" />
+
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/animal"
+        android:entries="@array/animals"
+        android:prompt="@string/animal"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_margin="10dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentRight="false"
+        android:layout_below="@+id/welcome_text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/FarmerName"
+        android:layout_below="@+id/animal"
+        android:hint="Enter Farmer's Name"
+        android:background="@android:color/background_light"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_margin="10dp"
+        android:autoText="false"
+        android:paddingLeft="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff131313"
+        android:textColor="#FF5733"
+        android:id="@+id/FarmerNameNull"
+        android:layout_below="@+id/FarmerName"
+        android:layout_margin="2dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:text="* Farmer's Name is required"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/FarmerAddress"
+        android:layout_below="@+id/FarmerNameNull"
+        android:hint="Enter Address"
+        android:background="@android:color/background_light"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_margin="10dp"
+        android:autoText="false"
+        android:paddingLeft="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff131313"
+        android:textColor="#FF5733"
+        android:id="@+id/FarmerAddressNull"
+        android:layout_below="@+id/FarmerAddress"
+        android:layout_margin="2dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:text="* Farmer's Address is required"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/AnimalNumber"
+        android:layout_below="@+id/FarmerAddressNull"
+        android:hint="Enter Animal Identification Number"
+        android:background="@android:color/background_light"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_margin="10dp"
+        android:autoText="false"
+        android:paddingLeft="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff131313"
+        android:textColor="#FF5733"
+        android:id="@+id/AnimalNumberNull"
+        android:layout_below="@+id/AnimalNumber"
+        android:layout_margin="2dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:text="* Animal Number is required"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Farmer Details"
+        android:id="@+id/welcome_text"
+        android:autoText="false"
+        android:background="#ffffb52e"
+        android:elegantTextHeight="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:inputType="none"
+        android:singleLine="false"
+        android:textSize="20dp"
+        android:paddingTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Feeds -->"
+        android:id="@+id/button"
+        android:layout_below="@+id/lactation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        android:textColor="#FFFFFF"
+        android:onClick="calculate"
+        android:background="#ff131313" />
+
+
+</RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

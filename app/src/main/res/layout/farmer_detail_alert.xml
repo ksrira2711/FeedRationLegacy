@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/farmerNames"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/farmerName"
+        android:layout_below="@+id/farmerNames"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Farmer Name"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:layout_below="@+id/farmerName"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Farmer Address"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/animal_number"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Farmer Number"
+        android:inputType="text"/>
+</RelativeLayout>

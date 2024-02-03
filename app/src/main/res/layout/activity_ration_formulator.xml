@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ration_formulation.feed_ration_latest.Ration_Formulator"
+    android:scaleType = "centerCrop"
+    android:background="@drawable/background1"
+    android:id="@+id/relativelayout">
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About the App"
+        android:id="@+id/button6"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:onClick="get_instructions"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD Feed"
+        android:id="@+id/button8"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:onClick="add_new_feed"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START >>"
+        android:id="@+id/button7"
+        android:layout_below="@+id/button6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:onClick="go_to_app"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/language"
+        android:entries="@array/languages"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/button6"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/language"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ongole_cow_image" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ongole_cow_image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context="ration_formulation.feed_ration_latest.Ration_Formulator"
+        android:scaleType = "centerCrop"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativelayout1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Dr. Aruncahalam Ravi\n Professor, Dept of Animal Nutrition\n College of Veterinary Science,\n SVVU Tirupati,AP,India\n Email:raviakst@gmail.com"
+            android:textColor="#ffffffff" />
+
+        <ImageView
+            android:id="@+id/svvuLogoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"
+            android:src="@drawable/svvu_logo" />
+
+    </RelativeLayout>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textOn="English(ఇంగ్లీష్)"
+        android:textOff="Telugu(తెలుగు)"
+        android:checked="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
